@@ -1,0 +1,99 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Skullz Exploits", "Midnight")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Primary Section")
+
+MainSection:NewButton("ADMIN", "GIVES YOU ADMIN IN ALMOST EVERY GAME", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+MainSection:NewToggle("Super-Human", "Become fast and jump high", function(state)
+    if state then
+        Game.players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        Game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        Game.players.LocalPlayer.Character.Humanoid.Walkspeed = 16
+        Game.players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+
+MainSection:NewButton("GodMode", "You become GOD", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
+end)
+
+
+-- LocalPlayer
+local Player = Window:NewTab("LocalPlayer")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("WalkSpeed", "Make you FAST", 420, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "jump high", 333, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset", "Reset Ws/Jp", function()
+    ame.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+
+-- Other
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+OtherSection:NewButton("Chat Spoofer", "Troll around", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
+
+OtherSection:NewButton("CHAT-BYPASS", "SAY WHAT YOU WANT KINDA", function()
+    loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end)
+
+local OtherSection = Other:NewSection("HUBS")
+
+OtherSection:NewButton("COCO hub", "HUBS", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+end)
+
+OtherSection:NewButton("Dark Hub", "OP HUB", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+
+OtherSection:NewButton("Kraken HUB", "HUB", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/Kraken_Hub.txt", true))()
+end)
+
+OtherSection:NewButton("Zyrex HUB", "G toggle", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/master/Main.lua"),true))()
+end)
+
+OtherSection:NewButton("OWL HUB", "I think you get the point", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+OtherSection:NewButton("Fathom hub", "bark", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/UmhaEvTT",true))()
+end)
+
+OtherSection:NewButton("UNIVERSAL FE", "ONLY WORKS IN R6", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end)
+
+OtherSection:NewButton("OXIE HUB", "ANOTHER HUB", function()
+    loadstring(game:HttpGet(("https://github.com/MarsQQ/ScriptHubScripts/blob/master/OxieHub"),true))()
+end)
+
+OtherSection:NewButton("V.G. HUB", "ANOTHER HUB", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub"))()
+end)
+
+OtherSection:NewButton("UNFAIR-HUB", "ANOTHER HUB", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+end)
